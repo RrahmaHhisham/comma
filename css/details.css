@@ -1,0 +1,925 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: white !important;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: #2a40b8;
+    border-radius: 50%;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+
+}
+
+.nav-item {
+    font-size: 20px;
+}
+
+.navbar-toggler i {
+    color: black !important;
+}
+
+.btn-outline {
+    color: #2a40b8 !important;
+    background-color: white;
+    border: 1px #2a40b8 solid;
+}
+
+.banner {
+    height: fit-content;
+    background-color: #3450e6;
+    padding: 30px 50px;
+    color: white;
+    position: relative;
+}
+
+
+
+.text-1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.text-1 h5 {
+    font-size: large;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.text-1 i {
+    margin-right: 5px;
+    align-items: center;
+}
+
+.text-2 {
+    margin-bottom: 8px;
+}
+
+.text-2 h1 {
+    font-weight: 600;
+}
+
+.text-3 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.text-3 h5 {
+    color: gold;
+    font-weight: 400;
+    font-size: small;
+}
+
+
+.text-4 {
+    max-width: 100%;
+}
+
+.text-4 h3 {
+    font-weight: 400;
+    font-size: large;
+    font-family: system-ui;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.text-5 {
+    display: flex;
+}
+
+.text-5 i {
+    margin-right: 10px;
+}
+
+.text-5 h5 {
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+
+.right-side {
+    position: absolute;
+    right: 50px;
+    top: 30px;
+}
+
+.card {
+    height: 530px;
+    width: 300px;
+    border: 10px solid white;
+    margin-bottom: 20px;
+    box-shadow: 4px 5px 6px 1px #6e6e6e;
+
+}
+
+.card img {
+    height: 250px;
+    width: 100%;
+}
+
+.card-body {
+    padding: 20px 30px;
+}
+
+.btns a {
+    width: 250px;
+    background-color: #3450e6;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.btns {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.btns i {
+    width: 55px;
+    height: 45px;
+    border: .5px black solid;
+}
+
+.btns .fa-regular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: black;
+}
+
+
+
+.card-text h4 {
+    text-align: start;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.info-card {
+    display: grid;
+    color: #6e6e6e;
+}
+
+.card-text p {
+    color: #6e6e6e;
+    margin-right: 5px;
+    margin-bottom: 4px;
+
+}
+
+.card-text p i {
+    margin-right: 3px;
+}
+
+.card-text h5 {
+    font-weight: 400;
+    font-size: large;
+}
+
+
+.caption {
+    color: black;
+    position: absolute;
+    left: 30px;
+}
+
+.caption h3 {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+.Description .container {
+    width: 65%;
+    margin: 50px;
+}
+
+.Description h2 {
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.container p {
+    line-height: 1.4;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+#check {
+    display: none;
+}
+
+.content {
+    display: none;
+    transition: .5s linear;
+}
+
+label {
+    display: inline-block;
+    margin-top: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #3450e6;
+}
+
+#check:checked~.content {
+    display: block;
+}
+
+#check:checked~label {
+    visibility: hidden;
+}
+
+#check:checked~label::after {
+    content: ' Less Than';
+    color: #3450e6;
+    display: block;
+    visibility: visible;
+}
+
+/* roadmap */
+
+
+.list-group {
+    color: #6e6e6e !important;
+}
+
+.m-4 h3 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.m-4 h5 {
+    color: #6e6e6e;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.list-group-item.active {
+    background-color: #f7f9fa !important;
+    color: black !important;
+    border: #c4c5c6 solid 2px !important;
+    border-radius: 0 !important;
+    font-weight: bold;
+    margin-bottom: 20px !important;
+    padding: 20px !important;
+}
+
+.roadmap-content {
+    margin-left: 50px;
+    margin-bottom: 80px;
+}
+
+
+.roadmap-content h5 {
+    color: #6e6e6e;
+    margin-bottom: 30px;
+}
+
+
+/* section requirment */
+
+.requirement {
+    border: #c4c5c6 solid 2px !important;
+    width: 828px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.requirement h2 {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.container p {
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 5px;
+    color: #6e6e6e;
+}
+
+#checkbox {
+    display: none;
+}
+
+.content {
+    display: none;
+    transition: .5s linear;
+    color: #6e6e6e;
+    line-height: 1.5;
+
+}
+
+label {
+    display: inline-block;
+    margin-top: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#checkbox:checked~.content {
+    display: block;
+}
+
+#checkbox:checked~label {
+    visibility: hidden;
+}
+
+#checkbox:checked~label::after {
+    content: 'show Less';
+    display: block;
+    visibility: visible;
+}
+
+.cards h2 {
+    margin-left: 50px;
+}
+
+.Student-cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Student-cards .every-card {
+    height: 450px;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin: 20px;
+
+}
+
+.cards .every-card img {
+    height: 250px;
+    width: 100%;
+    align-content: center;
+}
+
+.card-body {
+    padding: 20px 30px;
+}
+
+.card-body h5 {
+    color: #6e6e6e;
+    font-size: small;
+}
+
+.card-body p {
+    font-size: 15px;
+}
+
+.card-body .rate {
+    color: gold;
+}
+
+.imgs .span-1 {
+    color: #3450e6;
+    margin-right: 5px;
+}
+
+.imgs .span-2 {
+    color: #6e6e6e;
+    position: absolute;
+}
+
+.card-body .imgs {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 5px;
+    position: relative;
+}
+
+.card-body .imgs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.card-body .imgs p {
+    position: absolute;
+    left: 270px;
+    bottom: 5px;
+}
+
+.card-body .img-1 {
+    left: 150px;
+    bottom: 10px;
+}
+
+.card-body .img-2 {
+    left: 180px;
+    bottom: 10px;
+
+}
+
+.card-body .img-3 {
+    left: 210px;
+    bottom: 10px;
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    body {
+        line-height: normal;
+    }
+
+    .banner {
+        height: fit-content;
+        background-color: #3450e6;
+        padding: 30px 50px;
+        color: white;
+        position: relative;
+    }
+
+
+
+    .text-1 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .text-1 h5 {
+        font-size: 15px;
+        font-weight: 400;
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .text-1 i {
+        margin-right: 5px;
+        align-items: center;
+    }
+
+    .text-2 {
+        margin-bottom: 8px;
+    }
+
+    .text-2 h1 {
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+    .text-3 {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-3 h5 {
+        color: gold;
+        font-weight: 400;
+        font-size: small;
+    }
+
+
+    .text-4 {
+        max-width: 100%;
+    }
+
+    .text-4 h3 {
+        font-weight: 400;
+        font-size: large;
+        font-family: system-ui;
+        margin-bottom: 20px;
+
+    }
+
+    .text-5 {
+        display: flex;
+    }
+
+    .text-5 i {
+        margin-right: 10px;
+    }
+
+    .text-5 h5 {
+        margin-right: 20px;
+        font-weight: 400;
+        font-size: large;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    body {
+        line-height: normal;
+    }
+
+    .banner {
+        height: fit-content;
+        background-color: #3450e6;
+        padding: 30px 50px;
+        color: white;
+        position: relative;
+    }
+
+
+
+    .text-1 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .text-1 h5 {
+        font-size: 15px;
+        font-weight: 400;
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .text-1 i {
+        margin-right: 5px;
+        align-items: center;
+    }
+
+    .text-2 {
+        margin-bottom: 8px;
+    }
+
+    .text-2 h1 {
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+    .text-3 {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-3 h5 {
+        color: gold;
+        font-weight: 400;
+        font-size: small;
+    }
+
+
+    .text-4 {
+        max-width: 100%;
+    }
+
+    .text-4 h3 {
+        font-weight: 400;
+        font-size: large;
+        font-family: system-ui;
+        margin-bottom: 20px;
+
+    }
+
+    .text-5 {
+        display: flex;
+    }
+
+    .text-5 i {
+        margin-right: 10px;
+    }
+
+    .text-5 h5 {
+        margin-right: 20px;
+        font-weight: 400;
+        font-size: large;
+        margin-bottom: 20px;
+    }
+
+    .right-side {
+        position: absolute;
+        top: 240px;
+        right: 0px;
+    }
+
+}
+
+@media screen and (min-width: 425px) and (max-width: 540px) {
+    /* tablet */
+
+    body {
+        line-height: normal;
+    }
+
+
+    .banner {
+        height: fit-content;
+        background-color: #3450e6;
+        padding: 20px 30px;
+        color: white;
+        position: relative;
+    }
+
+
+
+    .text-1 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .text-1 h5 {
+        font-size: 15px;
+        font-weight: 300;
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .text-1 i {
+        margin-right: 5px;
+        align-items: center;
+    }
+
+    .text-2 {
+        margin-bottom: 8px;
+    }
+
+    .text-2 h1 {
+        font-weight: 400;
+        font-size: 25px;
+    }
+
+    .text-3 {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-3 h5 {
+        color: gold;
+        font-weight: 300;
+        font-size: small;
+    }
+
+
+    .text-4 {
+        max-width: 100%;
+    }
+
+    .text-4 h3 {
+        font-weight: 300;
+        font-size: 15px;
+        font-family: system-ui;
+        margin-bottom: 20px;
+
+    }
+
+    .text-5 {
+        display: flex;
+    }
+
+    .text-5 i {
+        margin-right: 5px;
+    }
+
+    .text-5 h5 {
+        width: 100%;
+        margin-right: 10px;
+        font-weight: 300;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .right-side {
+        position: absolute;
+        top: 260px;
+        right: 0px;
+    }
+
+
+}
+
+@media screen and (max-width: 426px) {
+    /* tablet */
+
+    body {
+        line-height: normal;
+    }
+
+
+    .banner {
+        height: fit-content;
+        background-color: #3450e6;
+        padding: 20px 30px;
+        color: white;
+        position: relative;
+    }
+
+
+
+    .text-1 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .text-1 h5 {
+        font-size: 15px;
+        font-weight: 300;
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .text-1 i {
+        margin-right: 5px;
+        align-items: center;
+    }
+
+    .text-2 {
+        margin-bottom: 8px;
+    }
+
+    .text-2 h1 {
+        font-weight: 400;
+        font-size: 25px;
+    }
+
+    .text-3 {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-3 h5 {
+        color: gold;
+        font-weight: 300;
+        font-size: small;
+    }
+
+
+    .text-4 {
+        max-width: 100%;
+    }
+
+    .text-4 h3 {
+        font-weight: 300;
+        font-size: 15px;
+        font-family: system-ui;
+        margin-bottom: 20px;
+
+    }
+
+    .text-5 {
+        display: flex;
+    }
+
+    .text-5 i {
+        margin-right: 5px;
+    }
+
+    .text-5 h5 {
+        width: 100%;
+        margin-right: 10px;
+        font-weight: 300;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .right-side {
+        position: absolute;
+        top: 260px;
+        right: 0px;
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+    /* tablet */
+
+    body {
+        line-height: normal;
+    }
+
+
+    .banner {
+        height: fit-content;
+        background-color: #3450e6;
+        padding: 20px 30px;
+        color: white;
+        position: relative;
+    }
+
+
+
+    .text-1 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .text-1 h5 {
+        font-size: 15px;
+        font-weight: 300;
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .text-1 i {
+        margin-right: 5px;
+        align-items: center;
+    }
+
+    .text-2 {
+        margin-bottom: 8px;
+    }
+
+    .text-2 h1 {
+        font-weight: 400;
+        font-size: 25px;
+    }
+
+    .text-3 {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-3 h5 {
+        color: gold;
+        font-weight: 300;
+        font-size: small;
+    }
+
+
+    .text-4 {
+        max-width: 100%;
+    }
+
+    .text-4 h3 {
+        font-weight: 200;
+        font-size: 15px;
+        font-family: system-ui;
+        margin-bottom: 20px;
+
+    }
+
+    .text-5 {
+        display: flex;
+    }
+
+    .text-5 i {
+        margin-right: 5px;
+    }
+
+    .text-5 h5 {
+        margin-right: 10px;
+        font-weight: normal;
+        font-size: 12px;
+    }
+
+    .right-side {
+        position: absolute;
+        top: 300px;
+        right: 0px;
+    }
+
+    .card {
+        width: 250px !important;
+    }
+
+}
